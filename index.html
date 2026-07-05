@@ -2,13 +2,46 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Mini App Telegram</title>
+  <title>Film App</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 10px;
+    }
+    .film {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+    button {
+      padding: 8px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
 </head>
-<body>
-  <h2>Mini App Saya</h2>
 
-  <button onclick="kirimData()">Kirim ke Bot</button>
+<body>
+  <h2>🎬 Katalog Film</h2>
+
+  <div class="film">
+    <h3>Film 1: Balas Dendam</h3>
+    <button onclick="tonton('Balas Dendam')">Tonton</button>
+  </div>
+
+  <div class="film">
+    <h3>Film 2: Cinta Terlarang</h3>
+    <button onclick="tonton('Cinta Terlarang')">Tonton</button>
+  </div>
+
+  <div class="film">
+    <h3>VIP Film</h3>
+    <button onclick="vip()">Buka VIP</button>
+  </div>
 
   <script src="app.js"></script>
 </body>
