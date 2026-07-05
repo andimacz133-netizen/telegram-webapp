@@ -3,6 +3,12 @@ const tg = window.Telegram.WebApp;
 tg.expand();
 tg.ready();
 
-function kirimData() {
-  tg.sendData("Halo dari Web App!");
+function tonton(film) {
+  tg.sendData("TONTON:" + film);
+  alert("Membuka film: " + film);
+}
+
+function vip() {
+  tg.sendData("VIP_CLICK");
+  alert("Masuk halaman VIP");
 }
